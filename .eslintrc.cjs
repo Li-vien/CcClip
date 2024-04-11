@@ -8,7 +8,8 @@ module.exports = {
     'eslint:recommended',
     '@vue/eslint-config-typescript',
     'plugin:vue/vue3-recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
+    "./.eslintrc-auto-import.json",  // 导入自动导入api的配置文件
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {

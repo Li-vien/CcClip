@@ -30,6 +30,10 @@ export default defineConfig({
     vue(),
     AutoImport({
       imports: ['vue'],
+      eslintrc: { // 生成eslint的配置文件，需要在eslint配置中导入
+        enabled: true, // Default `false`
+        globalsPropValue: 'readonly' // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
+      },
       resolvers: [
         ElementPlusResolver(),
         VueHooksPlusResolver(),

@@ -12,7 +12,7 @@ class="playPoint block border-1 border-gray-600 bg-gray-600 h-3 w-2.5 dark:borde
 
 <script setup lang="ts">
   import { getGridPixel, getSelectFrame } from '@/utils/canvasUtil';
-  import { computed, ref } from 'vue';
+  import { computed } from 'vue';
   import { useTrackState } from '@/stores/trackState';
   import { usePlayerState } from '@/stores/playerState';
   const offsetLine = {
