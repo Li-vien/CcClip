@@ -32,6 +32,7 @@
             v-else
             class="z-10 pt-5 pb-5 min-w-full flex shrink-0 grow flex-col justify-center min-h-full"
             :style="{ width: `${trackStyle.width}px` }"
+            id="track-container"
         >
           <template v-for="(lineData, lineIndex) of showTrackList" :key="lineIndex">
             <TrackLine
