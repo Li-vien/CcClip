@@ -96,6 +96,8 @@
         });
       }
     });
+    // 更新moveable
+    moveable.value && moveable.value.updateRect();
     return [...videoTargets, ...targets];
   });
   const draggableOptions = reactive({
