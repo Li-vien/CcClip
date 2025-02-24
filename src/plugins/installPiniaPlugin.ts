@@ -171,7 +171,8 @@ function getStoreKey(state: StateTree, value: any, name:string[] = []): string {
         if (item === value) {
             return true;
         } else if (isObject(item)) {
-            return getStoreKey(item, value, name);
+            // @ts-ignore
+            return getStoreKey(item.value, value, name);
         } else if (Array.isArray(item)) {
             return item.includes(value);
         } else {
